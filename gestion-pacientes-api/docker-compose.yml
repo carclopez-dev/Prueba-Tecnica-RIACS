@@ -1,0 +1,28 @@
+services:
+
+  postgres:
+    image: postgres:17
+    container_name: gestion-pacientes-db
+    environment:
+      POSTGRES_DB: gestion_pacientes
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: carc.lopez133
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: .
+    container_name: gestion-pacientes-api
+    depends_on:
+      - postgres
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/gestion_pacientes
+      DB_USERNAME: postgres
+      DB_PASSWORD: carc.lopez133
+    ports:
+      - "8080:8080"
+
+volumes:
+  postgres_data:
