@@ -86,9 +86,11 @@ PostgreSQL dentro de un contenedor.
 
 PostgreSQL accesible desde el host mediante el puerto 5433.
 
-Una vez iniciado correctamente, el backend estará disponible en:
+Una vez iniciado correctamente, el backend se ejecutará en el puerto 8080.
 
-http://localhost:8080
+La API de pacientes estará disponible en:
+
+http://localhost:8080/api/pacientes
 
 Para detener los contenedores:
 
@@ -122,7 +124,7 @@ http://localhost:5173
 
 Para utilizar correctamente la aplicación, el backend debe estar ejecutándose en:
 
-http://localhost:8080
+http://localhost:8080/api/pacientes
 
 El backend tiene configurado CORS para permitir solicitudes provenientes del frontend ejecutado en http://localhost:5173.
 
