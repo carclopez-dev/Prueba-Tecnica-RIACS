@@ -339,8 +339,8 @@ Archivos de estilos.
 
 Las solicitudes HTTP hacia el backend se encuentran centralizadas en un servicio dedicado.
 
--Autor
+## Autor
 Carlos López
 
-Prueba Técnica - Práctica Profesional Desarrollo Backend
+Prueba Técnica - Práctica Profesional Desarrollo Backend  
 RIACS Chile
