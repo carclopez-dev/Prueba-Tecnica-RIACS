@@ -122,8 +122,9 @@ Por defecto, la interfaz estará disponible en:
 
 http://localhost:5173
 
-Para utilizar correctamente la aplicación, el backend debe estar ejecutándose en:
+Para utilizar correctamente la aplicación, el backend debe estar ejecutándose en el puerto 8080.
 
+La API utilizada por el frontend se encuentra en:
 http://localhost:8080/api/pacientes
 
 El backend tiene configurado CORS para permitir solicitudes provenientes del frontend ejecutado en http://localhost:5173.
